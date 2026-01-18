@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindful Tasks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>✨ Mindful Tasks</h1>
+            <p class="subtitle">Organize your thoughts, one task at a time</p>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Sidebar - Lists -->
+            <aside class="sidebar">
+                <div class="lists-section">
+                    <h2>My Lists</h2>
+                    <div class="lists-container" id="listsContainer"></div>
+                    <button class="btn-add-list" id="addListBtn">+ New List</button>
+                </div>
+            </aside>
+
+            <!-- Tasks Section -->
+            <main class="tasks-section">
+                <div class="tasks-header">
+                    <h2 id="currentListTitle">All Tasks</h2>
+                    <button class="btn-add-task" id="addTaskBtn">+ Add Task</button>
+                </div>
+
+                <!-- Task Input Form -->
+                <div class="task-input-form" id="taskForm" style="display: none;">
+                    <input type="text" id="taskInput" placeholder="What needs to be done?" class="task-input">
+                    <div class="form-row">
+                        <input type="date" id="taskDate" class="task-date">
+                        <input type="time" id="taskTime" class="task-time">
+                    </div>
+                    <div class="form-buttons">
+                        <button class="btn-save" id="saveTaskBtn">Save</button>
+                        <button class="btn-cancel" id="cancelTaskBtn">Cancel</button>
+                    </div>
+                </div>
+
+                <!-- Tasks List -->
+                <div class="tasks-list" id="tasksList"></div>
+
+                <!-- Empty State -->
+                <div class="empty-state" id="emptyState">
+                    <p>📝 No tasks yet. Start by adding one!</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Modal for New List -->
+    <div class="modal" id="listModal" style="display: none;">
+        <div class="modal-content">
+            <h3>Create New List</h3>
+            <input type="text" id="listInput" placeholder="List name (e.g., Work, Personal)">
+            <div class="modal-buttons">
+                <button class="btn-save" id="saveListBtn">Create</button>
+                <button class="btn-cancel" id="cancelListBtn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Edit Task -->
+    <div class="modal" id="editModal" style="display: none;">
+        <div class="modal-content">
+            <h3>Edit Task</h3>
+            <input type="text" id="editTaskInput" placeholder="Task description" class="task-input">
+            <div class="form-row">
+                <input type="date" id="editTaskDate" class="task-date">
+                <input type="time" id="editTaskTime" class="task-time">
+            </div>
+            <div class="modal-buttons">
+                <button class="btn-save" id="saveEditBtn">Save</button>
+                <button class="btn-cancel" id="cancelEditBtn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
