@@ -32,10 +32,10 @@ HTML5: Markup & semantic structure
 CSS3: Modern styling (gradients, flexbox, transitions)
 Vanilla JavaScript: No frameworks; uses ES6 classes for OOP
 Key Functionality:
-✅ Create/manage multiple task lists
-✅ Add tasks with date & time
-✅ Edit/delete tasks
-✅ Data persists in browser storage
-✅ Beautiful UI with animations
+- Create/manage multiple task lists
+- Add tasks with date & time
+- Edit/delete tasks
+- Data persists in browser storage
+- Beautiful UI with animations
 
-Claude Haiku 4.5 • 1x
+
